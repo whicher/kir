@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Düğün yapacaklara düğün yapanlardan ipuçları 
+title: Düğün yapacaklara düğün yapanlardan ipuçları
 email: info@mg.dugun.fun
 description: > # this means to ignore newlines until "baseurl:"
   Ankara'da kır düğünü, ucuz açık hava düğünü, düğün fiyatları, düğün alışverişi, İncek ve gölbaşı mekanları analizi.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dugun.fun" # the base hostname & protocol for your site
 #github_username:    jekyll
-instagram_username: dugunfun 
+instagram_username: dugunfun
 twitter_username:   dugunfun
 
 # Build settings

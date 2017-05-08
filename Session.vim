@@ -12,12 +12,13 @@ badd +6 _config.yml
 badd +31 index.html
 badd +1 _posts/2016-09-01-welcome-to-jekyll.markdown
 badd +21 _posts/2016-08-20-bacon-ipsum.markdown
-badd +1 css/main.scss
+badd +11 css/main.scss
 badd +1 _posts/2017-05-08-dugun-mekanlari.md
+badd +0 _includes/head.html
 argglobal
 silent! argdel *
 argadd _config.yml
-edit _posts/2016-08-20-bacon-ipsum.markdown
+edit _config.yml
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -25,10 +26,7 @@ wincmd _ | wincmd |
 vsplit
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-4wincmd h
-wincmd w
+3wincmd h
 wincmd w
 wincmd w
 wincmd w
@@ -37,12 +35,12 @@ set nosplitright
 wincmd t
 set winheight=1 winwidth=1
 exe 'vert 1resize ' . ((&columns * 31 + 159) / 318)
-exe 'vert 2resize ' . ((&columns * 47 + 159) / 318)
-exe 'vert 3resize ' . ((&columns * 79 + 159) / 318)
-exe 'vert 4resize ' . ((&columns * 79 + 159) / 318)
-exe 'vert 5resize ' . ((&columns * 78 + 159) / 318)
+exe 'vert 2resize ' . ((&columns * 95 + 159) / 318)
+exe 'vert 3resize ' . ((&columns * 95 + 159) / 318)
+exe 'vert 4resize ' . ((&columns * 94 + 159) / 318)
 argglobal
 enew
+file NERD_tree_1
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -62,24 +60,6 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 21 - ((20 * winheight(0) + 36) / 73)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-21
-normal! 0
-wincmd w
-argglobal
-edit _config.yml
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
 let s:l = 20 - ((19 * winheight(0) + 36) / 73)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
@@ -88,7 +68,7 @@ normal! zt
 normal! 0
 wincmd w
 argglobal
-edit css/main.scss
+edit _includes/head.html
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -98,11 +78,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 11 - ((10 * winheight(0) + 36) / 73)
+let s:l = 25 - ((24 * winheight(0) + 36) / 73)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
+25
 normal! 0
 wincmd w
 argglobal
@@ -116,19 +96,18 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 13 - ((12 * winheight(0) + 36) / 73)
+let s:l = 19 - ((18 * winheight(0) + 36) / 73)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-13
+19
 normal! 0
 wincmd w
-5wincmd w
+2wincmd w
 exe 'vert 1resize ' . ((&columns * 31 + 159) / 318)
-exe 'vert 2resize ' . ((&columns * 47 + 159) / 318)
-exe 'vert 3resize ' . ((&columns * 79 + 159) / 318)
-exe 'vert 4resize ' . ((&columns * 79 + 159) / 318)
-exe 'vert 5resize ' . ((&columns * 78 + 159) / 318)
+exe 'vert 2resize ' . ((&columns * 95 + 159) / 318)
+exe 'vert 3resize ' . ((&columns * 95 + 159) / 318)
+exe 'vert 4resize ' . ((&columns * 94 + 159) / 318)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
