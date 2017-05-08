@@ -6,3 +6,4 @@ _site/
 .undodir
 Session*
 *.swp
+*.swo
