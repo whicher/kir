@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Örnek Düğün Bütçesi"
-date:   2017-05-08 12:11:11 +0100
+title: Örnek Düğün Bütçesi
+date: '2017-05-08 12:11:11 +0100'
 thumbnail: earth.jpg
+published: true
 ---
 
 Sizin için bir bütçe örneği oluşturduk.
@@ -46,16 +47,3 @@ Herkesin kesesine göre tabi, o yüzden istediğinizi ekleyin istediğinizi çı
 |Düğün Pastası|? TL|
 |After Party|? TL|
 |Nikah|? TL|
-
-> ## Capicola leberkas fatback, kielbasa strip steak.
-
-Chicken biltong ribeye, pig cupim filet mignon sausage.
-
-<figure>
-	<img src="{{ site.baseurl }}/assets/earth.jpg" alt="image">
-	<figcaption>
-		There is nothing on this earth more to be prized than true friendship.
-	</figcaption>
-</figure>
-
-Swine brisket tongue pork cow pork loin beef ribs turkey flank rump strip steak.
